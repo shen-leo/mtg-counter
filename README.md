@@ -2,7 +2,7 @@
 
 A life tracker created to help Magic the Gathering players track the status of their health.
 
-This project was made as an exercise in React's state management across multiple child and parent componenets.
+This project was made as an exercise in React's state management across multiple child and parent components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
