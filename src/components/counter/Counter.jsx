@@ -8,7 +8,7 @@ class Counter extends Component {
         super();
 
         this.state = {
-            counter: 0
+            counter: 20
         }
         
         this.increment = this.increment.bind(this);
@@ -19,6 +19,7 @@ class Counter extends Component {
     render() {
         return (
             <div className="counter">
+                <h3>Player {this.props.playerNum}</h3>
                 <CounterButton by={1} incrementMethod={this.increment} decrementMethod={this.decrement}/>
                 <CounterButton by={5} incrementMethod={this.increment} decrementMethod={this.decrement}/>
                 <CounterButton by={10} incrementMethod={this.increment} decrementMethod={this.decrement}/>
@@ -31,7 +32,7 @@ class Counter extends Component {
     reset() {
         this.setState(
             (prevState) => {
-                return{counter: 0}
+                return{counter: 20}
             }
         );
     }
@@ -57,11 +58,8 @@ class Counter extends Component {
 
 class CounterButton extends Component {
 
-    //Define the initial state in a constructor
-    //state => counter 0
-
     constructor() {
-        super(); // Error 1
+        super();
 
         this.state = {
             counter: 0
@@ -76,7 +74,6 @@ class CounterButton extends Component {
             <div className="counter">
                 <button onClick={this.increment}>+{this.props.by}</button>
                 <button onClick={this.decrement}>-{this.props.by}</button>
-                {/* <span className="count">{this.state.counter}</span> */}
             </div>
         );
     }
@@ -97,10 +94,12 @@ class CounterButton extends Component {
 }
 
 CounterButton.defaultProps = {
-    by: 1
+    by: 1,
+    playerNum: 1
 }
 
 CounterButton.propTypes = {
+    playerNum: PropTypes.number,
     by: PropTypes.number
 }
 

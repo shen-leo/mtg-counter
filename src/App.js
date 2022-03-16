@@ -7,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter/>
+        <Counter playerNum={1}/>
+        <Counter playerNum={2}/>
       </div>
     );
   }
