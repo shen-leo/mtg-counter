@@ -2,7 +2,17 @@
   text-align: center;
   display:flex;
   flex-direction:row;
-  padding: 15px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+  background-image: url(./img/Mu_Yanling_Wallpaper.jpeg);
+  backdrop-filter: blur(5px);
+
+  font-size: 30px;
 }
 
 .App-logo {
@@ -38,6 +48,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 /* 
 .App{display:flex; flex-direction:row;} */

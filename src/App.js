@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './components/counter/Counter'
+import Background from './components/background/Background'
 import logo from './logo.svg';
 import './App.css';
 
